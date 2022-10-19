@@ -1,4 +1,21 @@
-const sumAll = function() {
+const sumAll = function (a, b) {
+    let sum = 0;
+    if (a < 0) {
+        return `ERROR`;
+    } else if (typeof (b)!== 'number') {
+        return `ERROR`;
+    }else if (a < b) {
+        for (let i = a; i <= b; i++) {
+            sum += i;
+        }
+    } else {
+        for (let i = a; i >= b; i--) {
+            sum += i;
+        }
+    }
+
+    return sum;
+
 
 };
 
